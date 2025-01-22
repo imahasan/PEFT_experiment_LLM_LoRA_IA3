@@ -12,3 +12,7 @@ peft==0.14.0
 
 # Other utility libraries
 tqdm==4.67.1                        # Progress bar library for Python
+
+# static code analyzer
+flawfinder==2.0.19                   # Flawfinder for static code analysis of C/C++ vulnerabilities
+
