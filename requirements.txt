@@ -1,0 +1,14 @@
+# Essential Python packages
+torch==2.5.1                   # PyTorch for deep learning models
+torchaudio==2.5.1               # PyTorch library for audio processing
+torchvision==0.20.1              # PyTorch library for computer vision tasks
+transformers==4.47.1              # Hugging Face Transformers for pre-trained models
+datasets==3.2.0                  # Hugging Face Datasets for handling data
+accelerate==1.2.1                 # Accelerate for efficient model training and inference
+psutil==6.1.1                      # System and process utilities (CPU and memory monitoring)
+
+# PEFT - Parameter Efficient Fine-Tuning
+peft==0.14.0
+
+# Other utility libraries
+tqdm==4.67.1                        # Progress bar library for Python
