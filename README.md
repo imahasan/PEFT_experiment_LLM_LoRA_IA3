@@ -120,4 +120,3 @@ This project is licensed under the **MIT License**.
 For further questions or support, contact:
 
 - **E-mail:** [mdaha](mailto:mdaha@ntnu.no)
-- **GitHub:** [imahasan](mdaha@ntnu.no)
