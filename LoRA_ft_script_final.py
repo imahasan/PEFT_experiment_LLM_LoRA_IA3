@@ -25,7 +25,7 @@ except Exception as e:
 
 # Loading the dataset
 print("Loading Dataset...")
-dataset = load_dataset("json", data_files="test_data.json")
+dataset = load_dataset("json", data_files="dataset_preparation/test_data.json")
 
 # Loading the tokenizer
 model_name = "Salesforce/codegen-2B-multi"
