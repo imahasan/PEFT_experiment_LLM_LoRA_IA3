@@ -4,12 +4,12 @@ This repository contains the implementation and scripts for fine-tuning the `Sal
 
 ## Repository Structure
 
+```plaintext
 ├── ia3_ft_1gpu_3epo_final.sh
 ├── lora_ft_1gpu_3epo_final.sh
 ├── requirements.txt
 ├── test_data.json
 └── training_insights_analysis/
-    training_insights_analysis/
     ├── IA3_finetune_21080491.log
     ├── LoRA_finetune_21080493.log
     ├── ia3_training_logs.log
@@ -25,18 +25,24 @@ To ensure a successful replication of the experiments, install the required depe
 ### Installation Steps
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/peft-codegen-security.git
-   cd peft-codegen-security
+
+    ```bash
+    git clone https://github.com/your-username/peft-codegen-security.git
+    cd peft-codegen-security
+    ```
 
 2. **Set up a virtual environment (recommended):**
+
+    ```bash
     python3 -m venv peft_env
     source peft_env/bin/activate   # On Windows, use peft_env\Scripts\activate
+    ```
 
 3. **Install dependencies:**
 
+    ```bash
     pip install -r requirements.txt
-
+    ```
 
 ## Running the Experiments
 
@@ -52,14 +58,17 @@ Ensure the dataset file `test_data.json` is placed in the project directory. The
 
 Execute the following command to fine-tune the model using the LoRA technique:
 
-```bash
-bash lora_ft_1gpu_3epo_final.sh
+    ```bash
+    bash lora_ft_1gpu_3epo_final.sh
+    ```
 
 #### Running IA3 Fine-Tuning
 
 Execute the following command to fine-tune the model using the IA3 technique:
 
-bash ia3_ft_1gpu_3epo_final.sh
+    ```bash
+    bash ia3_ft_1gpu_3epo_final.sh
+    ```
 
 ### Both scripts perform the following tasks:
 
@@ -73,9 +82,10 @@ bash ia3_ft_1gpu_3epo_final.sh
 
 Once the models are fine-tuned, generate code using:
 
-```bash
-python LoRA_ft_script_final.py  # LoRA fine-tuned model
-python IA3_ft_script_final.py   # IA3 fine-tuned model
+    ```bash
+    python LoRA_ft_script_final.py  # LoRA fine-tuned model
+    python IA3_ft_script_final.py   # IA3 fine-tuned model
+    ```
 
 This process generates C/C++ code samples for vulnerability assessment.
 
@@ -83,7 +93,9 @@ This process generates C/C++ code samples for vulnerability assessment.
 
 To analyze the generated code for security vulnerabilities, run the Flawfinder tool:
 
-flawfinder --html --out=report.html path/to/generated/code/
+    ```bash
+    flawfinder --html --out=report.html path/to/generated/code/
+    ```
 
 This will generate an HTML report summarizing potential vulnerabilities in the code.
 
@@ -109,4 +121,3 @@ For further questions or support, contact:
 
 - **Your Name:** [your.email@example.com](mailto:your.email@example.com)
 - **GitHub:** [your-github-profile](https://github.com/your-github-profile)
-
