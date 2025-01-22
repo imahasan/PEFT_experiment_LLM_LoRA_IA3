@@ -4,11 +4,10 @@ This repository contains the implementation and scripts for fine-tuning the `Sal
 
 ## Repository Structure
 
-
+```
 ├── ia3_ft_1gpu_3epo_final.sh
 ├── lora_ft_1gpu_3epo_final.sh
 ├── requirements.txt
-├── test_data.json
 ├── dataset_preparation/
 │   └── prepare_data.py
 └── training_insights_analysis/
@@ -18,7 +17,7 @@ This repository contains the implementation and scripts for fine-tuning the `Sal
     ├── insight_analysis_of_ft.ipynb
     ├── lora_training_logs.log
     └── trainable_parameter.py
-
+```
 
 ## Prerequisites
 
