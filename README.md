@@ -4,7 +4,7 @@ This repository contains the implementation and scripts for fine-tuning the `Sal
 
 ## Repository Structure
 
-```plaintext
+
 ├── ia3_ft_1gpu_3epo_final.sh
 ├── lora_ft_1gpu_3epo_final.sh
 ├── requirements.txt
