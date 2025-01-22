@@ -119,5 +119,5 @@ This project is licensed under the **MIT License**.
 
 For further questions or support, contact:
 
-- **Your Name:** [your.email@example.com](mailto:your.email@example.com)
-- **GitHub:** [your-github-profile](https://github.com/your-github-profile)
+- **E-mail:** [mdaha](mailto:mdaha@ntnu.no)
+- **GitHub:** [imahasan](mdaha@ntnu.no)
