@@ -5,18 +5,19 @@ This repository contains the implementation and scripts for fine-tuning the `Sal
 ## Repository Structure
 
 ```
-├── ia3_ft_1gpu_3epo_final.sh
-├── lora_ft_1gpu_3epo_final.sh
-├── requirements.txt
-├── dataset_preparation/
-│   └── prepare_data.py
-└── training_insights_analysis/
-    ├── IA3_finetune_21080491.log
-    ├── LoRA_finetune_21080493.log
-    ├── ia3_training_logs.log
-    ├── insight_analysis_of_ft.ipynb
-    ├── lora_training_logs.log
-    └── trainable_parameter.py
+📂 Project Root
+├── 📄 ia3_ft_1gpu_3epo_final.sh
+├── 📄 lora_ft_1gpu_3epo_final.sh
+├── 📄 requirements.txt
+├── 📂 dataset_preparation/
+│   └── 📄 prepare_data.py
+└── 📂 training_insights_analysis/
+    ├── 📄 IA3_finetune_21080491.log
+    ├── 📄 LoRA_finetune_21080493.log
+    ├── 📄 ia3_training_logs.log
+    ├── 📘 insight_analysis_of_ft.ipynb
+    ├── 📄 lora_training_logs.log
+    └── 🛠️ trainable_parameter.py
 ```
 
 ## Prerequisites
@@ -119,13 +120,11 @@ Contributions are welcome! If you wish to contribute:
 2. **Create a new branch** with your improvements.
 3. **Submit a pull request** for review.
 
----
 
 ## License
 
 This project is licensed under the **MIT License**.
 
----
 
 ## Contact
 
