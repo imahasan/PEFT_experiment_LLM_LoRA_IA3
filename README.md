@@ -9,6 +9,8 @@ This repository contains the implementation and scripts for fine-tuning the `Sal
 ├── lora_ft_1gpu_3epo_final.sh
 ├── requirements.txt
 ├── test_data.json
+├── dataset_preparation/
+│   └── prepare_data.py
 └── training_insights_analysis/
     ├── IA3_finetune_21080491.log
     ├── LoRA_finetune_21080493.log
@@ -48,9 +50,21 @@ To ensure a successful replication of the experiments, install the required depe
 
 ### Step 1: Dataset Preparation
 
-Ensure the dataset file `test_data.json` is placed in the project directory. The dataset should contain prompts related to vulnerabilities categorized by CWE.
+#### Steps to Prepare the Dataset
 
----
+1. **Download the Original Dataset**  
+   You can obtain the original dataset from [here](https://github.com/jp2425/SCoPE).
+
+2. **Run the Preparation Script**  
+   To process the dataset, navigate to the root folder of the repository and run the following command:
+
+   ```bash
+   python dataset_preparation/prepare_data.py
+   ```
+2. **Output**
+    The processed dataset will be saved as 'test_data.json' in the same directory as the original dataset.
+
+
 
 ### Step 2: Fine-Tuning the Models
 
@@ -72,11 +86,10 @@ Execute the following command to fine-tune the model using the IA3 technique:
 
 ### Both scripts perform the following tasks:
 
-- Load the base model (`Salesforce/codegen-2B-multi`).
-- Apply PEFT fine-tuning (LoRA/IA3).
-- Save checkpoints at regular intervals.
+    - Load the base model (`Salesforce/codegen-2B-multi`).
+    - Apply PEFT fine-tuning (LoRA/IA3).
+    - Save checkpoints at regular intervals.
 
----
 
 ### Step 3: Generating Code from Fine-Tuned Models
 
