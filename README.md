@@ -11,6 +11,8 @@ This repository contains the implementation and scripts for fine-tuning the `Sal
 ├── 📄 requirements.txt
 ├── 📂 dataset_preparation/
 │   └── 📄 prepare_data.py
+├── 📂 output_generation_from_models/
+│   └── 📄 combined_base_LoRA_IA3_cuda.py
 └── 📂 training_insights_analysis/
     ├── 📄 IA3_finetune_21080491.log
     ├── 📄 LoRA_finetune_21080493.log
@@ -93,11 +95,10 @@ Execute the following command to fine-tune the model using the IA3 technique:
 
 ### Step 3: Generating Code from Fine-Tuned Models
 
-Once the models are fine-tuned, generate code using:
+Put the "combined_base_LoRA_IA3_cuda.py" script in the same folder or edit the corresponding path in the script to locate the fine-tuned directories. Finally run the script by below command. Other necessary informatioin are provided inside the script.
 
     ```bash
-    python LoRA_ft_script_final.py  # LoRA fine-tuned model
-    python IA3_ft_script_final.py   # IA3 fine-tuned model
+    python combined_base_LoRA_IA3_cuda.py  # Generate output from CodeGen-2B Multi, LoRA & IA3 fine-tuned models
     ```
 
 This process generates C/C++ code samples for vulnerability assessment.
@@ -111,6 +112,8 @@ To analyze the generated code for security vulnerabilities, run the Flawfinder t
     ```
 
 This will generate an HTML report summarizing potential vulnerabilities in the code.
+
+
 
 ## Contributing
 
