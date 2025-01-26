@@ -108,7 +108,7 @@ This process generates C/C++ code samples for vulnerability assessment.
 To analyze the generated code for security vulnerabilities, run the Flawfinder tool:
 
     ```bash
-    flawfinder --html --out=report.html path/to/generated/code/
+    flawfinder path_of_the_directory_where_cpp_files_are > path_to_save_the_report\flawfinder_report.txt
     ```
 
 This will generate an HTML report summarizing potential vulnerabilities in the code.
